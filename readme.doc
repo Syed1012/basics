@@ -1,0 +1,78 @@
+3 ways of declaring a variable
+
+- var, let, const [ Before ES-6 (ECMA Script) var was used for all variables, later let and const were introduced in ES6] 
+
+1) var allows multiple same variable creation
+
+2) let doesn't allows multiple same variable creation but allows change of data for that variable
+
+    It is block scoped --> It means it can't be accessed out of a function or a file
+    
+    Errors:
+        Uncaught SyntaxError: Identifier 'a' has already been declared
+        Uncaught ReferenceError: Cannot access 'a' before initialization
+
+3) const doesn't allows both 1 & 2 features. Once a variable with const is declared with data it can't be changed and neither that variable can be duplicated.
+
+    Errors:
+        TypeError:Assignment to constant variable.
+        Uncaught SyntaxError: Unexpected identifier
+
+
+Global Variable --> It is the variable that is defined outside of the functions, they can be accessed by any fnction directly
+
+local Variable --> It is the variable that is defined inside a function. The availabilty of that variable is limited to that function only.
+
+
+Data Types --> 1)Primitve DT 2)Non Primitve DT
+
+1)Primitve DT -- Number, String, Boolean, Null, Undefined, Symbol, BigInt
+
+i) Number - let num = 2; // Integer 
+            let num2 = 1.3; // Floating point number
+            let num3 = Infinity; // Infinity
+            let num4 = 'something here too'/2; // NaN
+
+ii) String - let str = "Hello There";
+             let str2 = 'Single quotes works fine';
+             let phrase = `can embed ${str}`;
+
+There’s no difference between ‘single’ and “double” quotes in javascript. Backticks provide extra functionality as with their help of them we can embed variables inside them.
+            let name = "Mukul";
+            // embed a variable
+            alert( `Hello, ${name}!` ); // Hello, Mukul!
+
+iii) Boolean - let isCoding = true;
+               let isWolf = false;
+
+iv) NULL - let age = null;
+
+The ‘null’ data type basically defines a special value that represents ‘nothing’, ’empty’, or ‘value unknown’. 
+Undefined Just like null, Undefined makes its own type. The meaning of undefined is ‘value is not assigned’.
+
+        let x;
+        console.log(x);  // undefined
+
+2) Non-Primitive DT - Objects
+
+objects -  objects are fundamental data structures used to store collections of data.
+           consist of key-value pairs and can be created using curly braces {} or the new keyword.
+
+“object constructor” syntax: let person = new Object(); 
+“object literal” syntax: let person = {};
+
+Operators of JS
+
+Below are Arithmetic Operators =>
+Addition, subtraction, Multiplication, Division, Modulus, Exponential (5**3 => it means 5x5x5 -> 125)
+Increment ++, Decrement --, Unary (+) Unary ‘+’ is the fastest of converting something into a number.
+
+Assignment Opearators
+
+Comparison Operator =>
+Equality (==), Strict Equality (===), Inquality (!=), Strict Inquality (!==)
+
+Terinary Operator =>
+Terinary Operator -- It is like the short form of if-else condition. Y = ? A:B 
+If the condition is true then Y = A otherwise Y = B
+
